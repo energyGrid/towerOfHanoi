@@ -55,6 +55,9 @@ h1 {
   background: red;
   width: 10em;
 }
+#discOne.ui-draggable-dragging {
+
+}
 #discTwo {
   background: white;
   width: 18em
