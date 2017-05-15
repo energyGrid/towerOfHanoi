@@ -1,28 +1,37 @@
 .sectionHeader {
   grid-area: header;
+  border-style: solid;
 }
 .sectionLeft {
   grid-area: leftSection;
+  border-style: solid;
+  justify-self: center;
 }
 .sectionMiddle {
   grid-area: middleSection;
+  border-style: solid;
 }
 .sectionRight {
   grid-area: rightSection;
+  border-style: solid;
 }
 .sectionFooter {
   grid-area: footer;
+  border-style: solid;
+  justify-self: end;
 }
 body {
-  background: grey;
+  background: #a3abb7;
   font-size: 62.5%;
   display: grid;
+  justify-items: center;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   grid-template-areas:
     "header header header"
     "leftSection middleSection rightSection"
-    "footer footer footer"
+    "footer footer footer";
+  grid-gap: 15px 10px;
 }
 h1 {
   font-size: 3em;
@@ -30,7 +39,6 @@ h1 {
 .disk {
   border-radius: 20px;
   height: 5em;
-  align-items: center;
 }
 #one {
   background: red;
