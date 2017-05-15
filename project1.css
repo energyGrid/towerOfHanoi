@@ -1,0 +1,46 @@
+.sectionHeader {
+  grid-area: header;
+}
+.sectionLeft {
+  grid-area: leftSection;
+}
+.sectionMiddle {
+  grid-area: middleSection;
+}
+.sectionRight {
+  grid-area: rightSection;
+}
+.sectionFooter {
+  grid-area: footer;
+}
+body {
+  background: grey;
+  font-size: 62.5%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header"
+    "leftSection middleSection rightSection"
+    "footer footer footer"
+}
+h1 {
+  font-size: 3em;
+}
+.disk {
+  border-radius: 20px;
+  height: 5em;
+  align-items: center;
+}
+#one {
+  background: red;
+  width: 10em;
+}
+#two {
+  background: white;
+  width: 18em
+}
+#three {
+  background: blue;
+  width: 24em;
+}
