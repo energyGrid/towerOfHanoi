@@ -1,30 +1,32 @@
-.sectionHeader {
+.itemHeader {
   grid-area: header;
   border-style: solid;
 }
-.sectionLeft {
+.gameLeft {
   grid-area: leftSection;
-  border-style: solid;
-  justify-self: center;
+  display: grid;
+  justify-items: center;
 }
-.sectionMiddle {
+.gameMiddle {
   grid-area: middleSection;
-  border-style: solid;
 }
-.sectionRight {
+.gameRight {
   grid-area: rightSection;
-  border-style: solid;
 }
-.sectionFooter {
+.itemFooter {
   grid-area: footer;
   border-style: solid;
   justify-self: end;
+}
+.gameItem {
+  border-style: solid;
 }
 body {
   background: #a3abb7;
   font-size: 62.5%;
   display: grid;
-  justify-items: center;
+  justify-content: space-around;
+  align-items: end;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   grid-template-areas:
@@ -36,19 +38,27 @@ body {
 h1 {
   font-size: 3em;
 }
+/*.pole {
+  height: 17em;
+  width: 3em;
+  border-radius: 5px;
+  background-color: brown;
+  z-index: -1;
+  margin: auto;
+}*/
 .disk {
   border-radius: 20px;
   height: 5em;
 }
-#one {
+#diskOne {
   background: red;
   width: 10em;
 }
-#two {
+#diskTwo {
   background: white;
   width: 18em
 }
-#three {
+#diskThree {
   background: blue;
   width: 24em;
 }
