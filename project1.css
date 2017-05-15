@@ -46,19 +46,20 @@ h1 {
   z-index: -1;
   margin: auto;
 }*/
-.disk {
+.disc {
   border-radius: 20px;
   height: 5em;
+  margin: .5px;
 }
-#diskOne {
+#discOne {
   background: red;
   width: 10em;
 }
-#diskTwo {
+#discTwo {
   background: white;
   width: 18em
 }
-#diskThree {
+#discThree {
   background: blue;
   width: 24em;
 }
